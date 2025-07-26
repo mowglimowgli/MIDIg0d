@@ -1,16 +1,15 @@
-from werkzeug.utils import secure_filename
-import os
+
 
 app = Flask(__name__)
 app.secret_key = 'change_me'
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {"mp3", "wav"}
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 
 def allowed_file(filename: str) -> bool:
     """Return True if the filename has an allowed extension."""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -25,6 +24,7 @@ def upload():
             return redirect(request.url)
         filename = secure_filename(file.filename)
         os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
