@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Conversión completada</h1>
+<p>Descarga tu archivo MIDI:</p>
+<a href="{{ url_for('uploaded_file', filename=filename) }}">Descargar</a>
+{% endblock %}

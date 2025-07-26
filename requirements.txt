@@ -1,0 +1,5 @@
+Flask
+spleeter
+librosa
+pretty_midi
+soundfile
