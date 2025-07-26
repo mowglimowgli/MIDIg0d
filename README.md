@@ -35,11 +35,13 @@ A continuacion se muestra un conjunto de pasos detallados para crear el proyecto
    Incluye la logica para subir archivos, separar "stems" y convertirlos a MIDI. Puedes utilizar librerias como `spleeter`, `librosa` y `pretty_midi`.
 6. **Plantillas HTML en `templates/`**
    `index.html` para la carga de archivos y `download.html` para la descarga de los resultados.
-7. **Contenido basico del README**
+7. **Interfaz elegante**
+   - Se incluye una hoja de estilos en `static/style.css` para un aspecto moderno del HUD.
+8. **Contenido basico del README**
    - Explica que la aplicacion permite separar audio y generar archivos MIDI.
    - Menciona las dependencias y como instalarlas.
    - Los archivos admitidos para la subida son `.mp3` y `.wav`.
-8. **Instalacion y ejecucion**
+9. **Instalacion y ejecucion**
    ```bash
    python -m venv venv
    source venv/bin/activate  # En Windows: venv\Scripts\activate

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Archivo subido</h1>
+<p>Puedes descargar tu archivo procesado aqui:</p>
+<a href="{{ url_for('uploaded_file', filename=filename) }}">Descargar</a>
+{% endblock %}
