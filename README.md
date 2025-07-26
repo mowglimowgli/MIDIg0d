@@ -2,10 +2,7 @@
 
 MIDIg0d es una pequeña aplicación web para separar audio y descargar el resultado en formato MIDI. Ha sido pensada para usuarios sin experiencia previa y solo requiere conocimientos básicos de Python.
 
-## Requisitos
 
-- Python 3.8 o superior
-- Las dependencias listadas en `requirements.txt`
 
 Instala todo en un entorno virtual para evitar problemas con otros proyectos:
 
