@@ -1,4 +1,3 @@
-from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 import os
 
@@ -26,11 +25,6 @@ def upload():
             return redirect(request.url)
         filename = secure_filename(file.filename)
         os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        flash('Archivo subido correctamente')
-        return redirect(request.url)
-    return render_template('index.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True)
