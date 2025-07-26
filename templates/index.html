@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Sube tu archivo de audio</h1>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="audio/mp3,audio/wav" required>
+    <button type="submit">Subir</button>
+</form>
+{% endblock %}
