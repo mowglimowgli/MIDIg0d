@@ -38,7 +38,6 @@ A continuacion se muestra un conjunto de pasos detallados para crear el proyecto
 7. **Contenido basico del README**
    - Explica que la aplicacion permite separar audio y generar archivos MIDI.
    - Menciona las dependencias y como instalarlas.
-   - Los archivos admitidos para la subida son `.mp3` y `.wav`.
 8. **Instalacion y ejecucion**
    ```bash
    python -m venv venv
